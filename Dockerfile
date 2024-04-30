@@ -12,4 +12,4 @@ USER 65534:65534
 # Kubernetes pod will require the following capabilities in it's security policy to run:
 # - NET_BIND_SERVICE
 
-ENTRYPOINT ["/usr/sbin/rsyslog", "-i", "NONE"]
+ENTRYPOINT ["/usr/sbin/rsyslog", "-i", "NONE", "-n"]
